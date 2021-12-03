@@ -1,0 +1,1 @@
+# CentOS-7-LAMP-Kurulumu-ve-Yap-land-r-lmas-
