@@ -7,7 +7,7 @@ Bu çalışma ile sıfırdan kurulumu yapılan CentOS 7 işletim sistemine LAMP 
 ### 2. Yapılandırma Sürecinde İşimize Yarayacak Yardımcı Paketleri Yükleyelim
 nano isimli editörü yükleyelim
 
-    sudo yum nano -y
+    sudo yum install nano -y
 
 nano isimli editörü varsayılan olarak tanımlayalım
 
@@ -30,6 +30,10 @@ mariadb 'yi yükleyelim
 mariadb 'yi çalıştırıp her yeniden başlamada otomatik olarak çalıştırılmasını sağlayalım
 
     systemctl start mariadb && systemctl enable mariadb
+
+mariadb 'nin ilk ayarlarını gerçekleştirelim.
+
+    mysql_secure_installation
 
 ### 5. PHP (7.x) Kurulumu
 PHP (7.x) için gerekli yardımcı kütüphaneleri yükleyelim
